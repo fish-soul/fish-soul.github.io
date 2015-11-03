@@ -95,10 +95,65 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 0 0;
+    background-color: #f1f1f1;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
 
+.header {
+    background-color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
 
+.title {
+    font-size: 46px;
+    font-weight: 800;
+    color: #555;
+    margin: auto 0;
+}
 
+.sub-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+}
 
+.content {
+    margin: 50px auto;
+}
+
+.item {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.item .item-header .item-time {
+    font-size: 11px;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.item .item-header .item-title {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.item .item-content .image-desc {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    line-height: 180%;
+    margin-top: 30px;
+}
 
 
 
