@@ -106,6 +106,12 @@ body {
     max-width: 100%;
 }
 
+/*
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+*/
 
 .header {
     max-width: 80%;
