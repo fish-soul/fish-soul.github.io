@@ -1,0 +1,279 @@
+body {
+    overflow: hidden;
+}
+
+
+/* 메인 본문 시작 */
+
+
+.MainContents {
+    width: 500%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+/* 배경 이미지 시작 */
+
+.ContentsOne {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background-color: #3c3f44;
+    background-image: url(../img/mainbg_coffeeatworks.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    float: left;
+}
+
+.ContentsTwo {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background-color: #5ac6ff;
+    background-image: url(../img/mainbg_roomcube.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    float: left;
+}
+
+.ContentsThree {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    background-image: url(../img/mainbg_rebranding.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    float: left;
+}
+
+.ContentsFour {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    background-image: url(../img/mainbg_lbh.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    float: left;
+}
+
+
+.ContentsFive {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    background-image: url(../img/mainbg_xmascard.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    float: left;
+}
+
+/* 배경 이미지 끝 */
+
+
+
+/* 중앙 텍스트 시작 */
+
+.MainContents .container {
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    padding-top: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+.container .MainTitle {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.container .MainSubTitle {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 50px;
+}
+
+
+.container .MainBtnMore {
+    margin-top: 50px;
+}
+
+/* 중앙 텍스트 끝 */
+
+/* 버튼 애니메이션 시작 */
+
+.MainBtnMore a {
+    border: 4px solid #FFFFFF;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    position: relative;;
+    padding: 10px 60px;
+    transition: 0.2s;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.MainBtnMore a:hover {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+/* 버튼 애니메이션 끝 */
+
+
+
+/* 중앙 텍스트 애니메이션 시작 */
+
+.contents {
+    opacity: 1;
+    transition: 2s;
+}
+
+.contents.active {
+    -webkit-animation: MoveToLeft 1.5s;
+    -o-animation: MoveToLeft 1.5s;
+    animation: MoveToLeft 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.contents .MTitle {
+    opacity: 0;
+    transition: 2s;
+}
+
+.contents.active .MTitle {
+    -webkit-animation: MoveToLeftText 0.5s;
+    -o-animation: MoveToLeftText 0.5s;
+    animation: MoveToLeftText 0.5s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.contents .MTBtn {
+    opacity: 0;
+    transition: 2s;
+}
+
+.contents.active .MTBtn {
+    -webkit-animation: MoveToLeftText 0.5s;
+    -o-animation: MoveToLeftText 0.5s;
+    animation: MoveToLeftText 0.5s;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.contents .MSTitle {
+    opacity: 0;
+    transition: 2s;
+}
+
+.contents.active .MSTitle {
+    -webkit-animation: MoveToLeftText 0.5s;
+    -o-animation: MoveToLeftText 0.5s;
+    animation: MoveToLeftText 0.5s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes MoveToLeftText {
+    from {
+        opacity: 0;
+        margin-left: 100px; }
+    to {
+        opacity: 1;
+        margin-left: 0px; }
+}
+
+/* 중앙 텍스트 애니메이션 끝 */
+
+
+
+/* 좌우 화살표 시작 */
+
+.ArrowContainer {
+    width: 52px;
+    height: 16px;
+    position: fixed;
+    top: 75%;
+    right: 12.5%;
+    z-index: 3;
+    opacity: 0;
+    -webkit-animation: MArrow 1s;
+    -o-animation: MArrow 1s;
+    animation: MArrow 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.9s;
+    -moz-animation-delay: 1.9s;
+    -o-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+}
+
+@keyframes MArrow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    ;}
+}
+
+.ArrowContainer .LeftArrow {
+    width: 50%;
+    float: left;
+}
+
+.ArrowContainer .RightArrow {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+/* 좌우 화살표 끝 */
+
+/* 메인 본문 css 끝 */
+
+
+
+
+

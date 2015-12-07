@@ -1,0 +1,62 @@
+
+
+/* 본문 시작 */
+
+
+.FSContents {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color: #1066e6;
+}
+
+/* 배경 이미지 시작 */
+
+.Contents {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #1066e6;
+    background-image: url(../img/profile_bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    float: left;
+}
+
+/* 배경 이미지 끝 */
+
+
+
+/* 중앙 텍스트 시작 */
+
+.FSContents .container {
+    width: 75%;
+    top: 43%;
+    left: 50%;
+    color: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+.container .Title {
+    font-size: 80px;
+    line-height: 90px;
+}
+
+.yellow {
+    color: #ffff00;
+}
+
+/* 중앙 텍스트 끝 */
