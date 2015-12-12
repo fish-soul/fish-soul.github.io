@@ -260,11 +260,13 @@
     }
 
     .DiscriptionBg .discription .info .text {
+        width: 80%;
         float: left;
 
     }
 
     .DiscriptionBg .discription .info .icon {
+        width: 20%;
         float: right;
         text-align: right;
     }
