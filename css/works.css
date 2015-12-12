@@ -13,13 +13,12 @@
     width: 25%;
     padding-bottom: 25%;
     float: left;
-    background-color: #ffff00;
+    background-color: #000000;
     background-image: url(../img/works_thumbnail_coffeeatworks.png);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
 }
 
 
@@ -27,26 +26,25 @@
     width: 25%;
     padding-bottom: 25%;
     float: left;
-    background-color: #ffff00;
+    background-color: #000000;
     background-image: url(../img/works_thumbnail_roomcube.png);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
 }
 
 .bg_3 {
     width: 25%;
     padding-bottom: 25%;
     float: left;
-    background-color: #ffff00;
+    background-color: #000000;
     background-image: url(../img/works_thumbnail_rebranding.png);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
+    opacity: 0.5;
 }
 
 .bg_4 {
@@ -59,7 +57,7 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
+    opacity: 0.5;
 }
 
 .bg_5 {
@@ -72,7 +70,7 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
+    opacity: 0.5;
 }
 
 .bg_6 {
@@ -85,7 +83,7 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
+    opacity: 0.5;
 }
 
 .bg_7 {
@@ -98,7 +96,6 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
 }
 
 .bg_8 {
@@ -111,7 +108,6 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
 }
 
 .bg_9 {
@@ -124,7 +120,7 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
+    opacity: 0.5;
 }
 
 .bg_10 {
@@ -137,7 +133,7 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
+    opacity: 0.5;
 }
 
 .bg_11 {
@@ -150,7 +146,7 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
+    opacity: 0.5;
 }
 
 .bg_12 {
@@ -163,79 +159,12 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    cursor: pointer;
-}
-
-.bg_13 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_coffeeatworks.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.bg_14 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_roomcube.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.bg_15 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_roomcube.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.bg_16 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_roomcube.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    cursor: pointer;
+    opacity: 0.5;
 }
 
 
-/* 커피앳웍스 */
 
-.CAW {
-    width: 100%;
-    position: relative;
-}
-
-.CAW .visual {
-    width: 100%;
-    height: 700px;
-    background-color: #3c3f44;
-    background-image: url(../works/img/works_coffeeatworks_bg1.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
+/* 상세 공통 */
 
 .WorksTitle {
     width: 100%;
@@ -245,12 +174,6 @@
     line-height: 60px;
     text-align: center;
     position: absolute;
-}
-
-.CAW .DiscriptionBg {
-    width: 100%;
-    background-color: #1a1d20;
-    padding: 60px 0;
 }
 
 
@@ -281,6 +204,33 @@
     font-size: 16px;
     line-height: 30px;
 }
+
+
+/* 커피앳웍스 */
+
+.CAW {
+    width: 100%;
+    position: relative;
+}
+
+.CAW .visual {
+    width: 100%;
+    height: 700px;
+    background-color: #3c3f44;
+    background-image: url(../works/img/works_coffeeatworks_bg1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+.CAW .DiscriptionBg {
+    width: 100%;
+    background-color: #1a1d20;
+    padding: 60px 0;
+}
+
 
 .CAW .chapter1 {
     width: 100%;
@@ -362,4 +312,82 @@
     line-height: 30px;
     text-align: center;
 }
+
+
+/* 현대카라캐커 룸 & 큐브 */
+
+.RoomCube {
+    width: 100%;
+    position: relative;
+}
+
+.RoomCube .visual {
+    width: 100%;
+    height: 1090px;
+    background-color: #5ac6ff;
+    background-image: url(../works/img/works_roomcube_bg1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+.RoomCube .DiscriptionBg {
+    width: 100%;
+    background-color: #0199ee;
+    padding: 60px 0;
+}
+
+
+/* 화장실 에티켓 일러스트 */
+
+.Restroom {
+    width: 100%;
+    position: relative;
+}
+
+.Restroom .visual {
+    width: 100%;
+    height: 1600px;
+    background-color: #a4adb7;
+    background-image: url(../works/img/works_restroom_bg1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.Restroom .DiscriptionBg {
+    width: 100%;
+    background-color: #778696;
+    padding: 60px 0;
+}
+
+
+/* 크리스카스 카드 */
+
+.XMas {
+    width: 100%;
+    position: relative;
+}
+
+.XMas .visual {
+    width: 100%;
+    height: 1150px;
+    background-color: #e1c6c4;
+    background-image: url(../works/img/works_xmascard_bg1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.XMas .DiscriptionBg {
+    width: 100%;
+    background-color: #e78e88;
+    padding: 60px 0;
+}
+
+
 
