@@ -82,8 +82,8 @@ box1 = new Layer
 	height: 360
 	image: "images/image9.png"
 	parent: wrap
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 	
 box2 = new Layer
 	width: 360
@@ -91,8 +91,8 @@ box2 = new Layer
 	image: "images/image2.png"
 	parent: wrap
 	y: 370
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 	
 box3 = new Layer
 	width: 360
@@ -100,8 +100,8 @@ box3 = new Layer
 	image: "images/image3.png"
 	parent: wrap
 	y: 740
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 
 box4 = new Layer
 	width: 360
@@ -109,8 +109,8 @@ box4 = new Layer
 	image: "images/image4.png"
 	parent: wrap
 	y: 1110
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 	
 box5 = new Layer
 	width: 360
@@ -118,8 +118,8 @@ box5 = new Layer
 	image: "images/image5.png"
 	parent: wrap
 	x: 370
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 
 box6 = new Layer
 	width: 360
@@ -128,8 +128,8 @@ box6 = new Layer
 	parent: wrap
 	x: 370
 	y: 370
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 	
 box7 = new Layer
 	width: 360
@@ -138,8 +138,8 @@ box7 = new Layer
 	parent: wrap
 	x: 370
 	y: 740
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 	
 box8 = new Layer
 	width: 360
@@ -148,16 +148,16 @@ box8 = new Layer
 	parent: wrap
 	x: 370
 	y: 1110
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 	
 box9 = new Layer
 	width: 0
 	height: 0
 	image: "images/image9.png"
 	parent: wrap
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 
 box10 = new Layer
 	width: 0
@@ -165,8 +165,8 @@ box10 = new Layer
 	image: "images/image2.png"
 	parent: wrap
 	y: 740
-	originX: 0.5
-	originY: 0.5
+	originX: 0
+	originY: 0
 
 animation1 = new Animation
 	layer: box1
