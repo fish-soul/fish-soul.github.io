@@ -115,6 +115,9 @@
 
     .ContentsThree {
         background-position: -350px 150px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
         background-color: #d47b7e;
     }
 
