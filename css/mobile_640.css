@@ -1,0 +1,294 @@
+@media (min-width: 640px) and (max-width: 959px) {
+
+    /* 공통 */
+    .header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        padding-top: 30px;
+        padding-bottom: 22px;
+        z-index: 4;
+    }
+
+    .header .container {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0 0 0 30px;
+        position: relative;
+    }
+
+    .close {
+        width: 100%;
+        height: 52px;
+        position: relative;
+    }
+
+    .close .line {
+        width: 225px;
+        top: 40px;
+        height: 4px;
+        background-color:#ffffff;
+        float: left;
+        position: absolute;
+
+    }
+
+    .close .btn {
+        width: 18px;
+        height: 18px;
+        top: 30px;
+        right: 30px;
+        float: right;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .HiddenNavi .Menu {
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 40px;
+
+    }
+
+    .profile {
+        margin-top: 30%;
+        width: 200px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .MyInfo {
+        margin-top: 20px;
+        font-size: 11px;
+        line-height: 18px;
+        color: #999999;
+    }
+
+    /* 메인 */
+
+    .ArrowContainer {
+        display: none;
+    }
+
+    .MainContents .container {
+        width: 80%;
+        top: 15%;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+    }
+
+    .container .MainTitle {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .container .MainSubTitle {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 50px;
+        display: none;
+    }
+
+    .ContentsOne {
+        background-position: center 100px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .ContentsTwo {
+        background-position: center 100px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .ContentsThree {
+        background-position: -350px 150px;
+        background-color: #d47b7e;
+    }
+
+    .ContentsFive {
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    /* 피시소울 */
+    .container .Title {
+        font-size: 60px;
+        line-height: 66px;
+    }
+
+
+    /* works */
+    .projectQQ {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+
+    .projectHH {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+
+    .projectHQ {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+
+    /*
+
+    .bg_1 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+
+    .bg_2 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_3 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_4 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_5 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_6 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_7 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_8 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_9 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_10 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_11 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .bg_12 {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+    */
+
+
+    /* 커피앳웍스 */
+    .WorksTitle {
+        font-size: 36px;
+        margin-top: 80px;
+        line-height: 48px;
+    }
+
+    .CAW .visual {
+        height: 600px;
+        background-size: cover;
+    }
+
+    .CAW .chapter1 {
+        display: none;
+    }
+
+    .CAW .chapter2 {
+        display: none;
+    }
+
+    .CAW .chapter3 {
+        display: none;
+    }
+
+
+
+    /* room cube */
+
+    .RoomCube .visual {
+        height: 600px;
+        background-size: cover;
+    }
+
+
+
+
+    /* restroom illustration */
+
+    .Restroom .visual {
+        height: 600px;
+        -webkit-background-size: 120%;
+        background-size: 120%;
+    }
+
+
+
+    /* xmas card */
+
+    .XMas .visual {
+        height: 600px;
+        background-position: center 80px;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+
+
+    /* works common */
+
+    .DiscriptionBg .discription .info {
+        width: 100%;
+        float: none;
+    }
+
+    .DiscriptionBg .discription .info .text {
+        width: 70%;
+        float: left;
+
+    }
+
+    .DiscriptionBg .discription .info .icon {
+        width: 30%;
+        float: right;
+        text-align: right;
+    }
+
+    .DiscriptionBg .discription .summary {
+        width: 100%;
+        float: none;
+        padding-top: 30px;
+    }
+
+}

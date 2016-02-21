@@ -1,0 +1,1258 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+/*Basic style*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  src:	url(../font/DroidSans.eot);
+  src:	url(../font/DroidSans.eot?#iefix) format('embedded-opentype'),url(../font/DroidSans.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/EFpQQyG9GqCrobXxL-KRMXbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+  src:	url(../font/DroidSans-Bold.eot);
+  src:	url(../font/DroidSans-Bold?#iefix) format('embedded-opentype'),url(../font/DroidSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v3/QQt14e8dY39u-eYBZmppwRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+  src:	url(../font/DroidSerif-Bold.eot);
+  src:	url(../font/DroidSerif-Bold?#iefix) format('embedded-opentype'),url(../font/DroidSerif-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family:'NG';
+  font-style:normal;
+  font-weight: 400;
+  src:	url(../font/NanumGothic.eot);
+  src:	url(../font/NanumGothic.eot?#iefix) format('embedded-opentype'),
+url(../font/NanumGothic.woff) format('woff'),
+url(../font/NNanumGothic.ttf) format('truetype');
+}
+
+
+
+body {
+	font-family : 'Droid Sans', 'NG', sans-serif;
+	font-size:12px;
+	color:#666666;
+	line-height:180%;
+}
+
+a:link {text-decoration:none; color:inherit;}
+a:visited {text-decoration:none; color:inherit;}
+a:active {text-decoration:none; color:inherit;}
+a:hover {text-decoration:none; color:inherit;}
+
+h1 {
+	font-family:'Droid Serif', serif;
+	font-size:28px;
+	font-weight:700;
+	line-height:32px;
+	}
+
+.black {color: #000000;}
+
+.light_gray {color:#999999;}
+
+.color {color:#ff3f19;}
+
+.bold {font-weight:bold;}
+
+.small_font {
+	font-size:11px;
+	line-height:16px;
+}
+
+
+.gnb {
+	position:fixed;
+	top:0px;
+	width:100%;
+	max-height:120px;
+	background-color:#ffffff;
+	vertical-align:middle;
+	text-align:center;
+	opacity:0.95;
+	filter:alpha(opacity=95);
+	border-bottom:1px solid #e1e1e1;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:10;
+}
+
+.gnb_wrap {
+	max-width:1280px;
+	height:60px;
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align:middle;
+	z-index:11;
+}
+.gnb_title_wrap{
+	width:320px;
+	z-index:12;
+	float:left;
+}
+.gnb_title {
+	width : 320px;
+	height: 60px;
+	background:url(../images/common_title.png) left top no-repeat;
+	background-size:320px 60px;
+	z-index:13;
+}
+.gnb_menu_wrap {
+	width:320px;
+	height:60px;
+	vertical-align:middle;
+	float:right;
+	z-index:13;
+}
+.gnb_select_menu {
+	width:25%;
+	height:60px;
+	background-color:#ff3f19;
+	float:left;
+	text-align:center;
+	color:#ffffff;
+	line-height:60px;
+	z-index:14;
+}
+.gnb_non_menu {
+	width:25%;
+	height:60px;
+	float:left;
+	font-size:12px;
+	color:#333333;
+	line-height:60px;
+	z-index:14;
+}
+
+/*contents style*/
+
+.dind {
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+
+.wrap {
+	width:100%;
+	margin-top:100px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	z-index:1;
+}
+	
+.container_wrap {
+	max-width:1280px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	z-index:2;
+}
+.project {
+	width:300px;
+	float:left;
+	overflow: hidden;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:30px;
+	text-align:center;
+	z-index:3;
+}
+
+.project .description {
+	width:280px;
+	height:150px;
+	padding:10px 0px 20px 0px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+
+.project .title {
+	font-family:'Droid Serif', serif;
+	font-size:16px;
+	font-weight:700;
+	color:#333333;
+	line-height:22px;
+	text-align:left;
+}
+
+.project .description .comment {
+	font-family:'Droid Sans', 'NG', san-serif;
+	font-size:12px;
+	line-height:18px;
+	text-align:left;
+	margin-top:14px;
+}
+
+.project .description .more {
+	font-family:'Droid Sans', 'NG', san-serif;
+	font-size:10px;
+	color:#ff3f19;
+	text-align:right;
+	margin-top:10px;
+}
+
+/*project thumbnail*/
+
+
+.project .img_pulipre {
+	width:300px;
+	height:195px;
+	background:url(../images/000_pulip_rebranding.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_christmascard2013 {
+	width:300px;
+	height:195px;
+	background:url(../images/020_2013chrismascard.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_mviosite {
+	width:300px;
+	height:195px;
+	background:url(../images/001_mvio_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}	
+
+.project .img_gore3l {
+	width:300px;
+	height:195px;
+	background:url(../images/002_goretex_3l_movie.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}	
+
+.project .img_0to7mobile {
+	width:300px;
+	height:195px;
+	background:url(../images/003_0to7_mobile.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}	
+
+.project .img_olympusfamily {
+	width:300px;
+	height:195px;
+	background:url(../images/004_olympus_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}	
+
+.project .img_biotermpromo {
+	width:300px;
+	height:195px;
+	background:url(../images/005_bioterm_promotion.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_titleistsite {
+	width:300px;
+	height:195px;
+	background:url(../images/006_titleist_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_goretexperformance {
+	width:300px;
+	height:195px;
+	background:url(../images/007_goretex_performance_movie.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_inglifemobile {
+	width:300px;
+	height:195px;
+	background:url(../images/008_inglife_mobile.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_kyobolifesfa {
+	width:300px;
+	height:195px;
+	background:url(../images/009_kyobolife_sfa.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_skv1dsp {
+	width:300px;
+	height:195px;
+	background:url(../images/009_skv1_dsp.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_goreactive {
+	width:300px;
+	height:195px;
+	background:url(../images/010_goretex_active_movie.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_cjfreshianpromo {
+	width:300px;
+	height:195px;
+	background:url(../images/011_cjfreshian_promotion.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_oliveyoungsite {
+	width:300px;
+	height:195px;
+	background:url(../images/012_oliveyoung_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_cjeduthink {
+	width:300px;
+	height:195px;
+	background:url(../images/013_cjedu_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_amorepacificmall {
+	width:300px;
+	height:195px;
+	background:url(../images/014_amorepacific_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_kcare {
+	width:300px;
+	height:195px;
+	background:url(../images/015_kcare_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_kiehlssite {
+	width:300px;
+	height:195px;
+	background:url(../images/016_kiehls_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_samsungux {
+	width:300px;
+	height:195px;
+	background:url(../images/017_samsung_ux.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_lgcyonz {
+	width:300px;
+	height:195px;
+	background:url(../images/018_lgcyonz_site.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.project .img_kyobobookkiosk {
+	width:300px;
+	height:195px;
+	background:url(../images/019_kyobobook_kiosk.png) left top no-repeat;
+	background-size:300px 195px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+/*project_sub*/
+
+.sub {
+	max-width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:2;
+}
+
+.sub .sub_title {
+	margin-bottom:18px;
+	margin-left:120px;
+	margin-right:120px;
+}
+
+.sub .sub_sub_title {
+	font-family:'Droid Serif', serif;
+	font-size:16px;
+	font-weight:700;
+	margin-bottom:20px;
+	text-align:left;
+}
+
+.sub .sub_title_info {
+	margin-bottom:30px;
+	margin-left:120px;
+	margin-right:120px;
+}
+
+.sub .sub_title_line {
+	width:40px;
+	height:4px;
+	background-color:#000000;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+}
+
+.sub .contents_margin {
+	margin-left:120px;
+	margin-right:120px;
+}
+
+.sub .sub_contents {
+	text-align:left;
+	margin-bottom:50px;
+}
+
+.sub .sub_back {
+	height:100px;
+	line-height:100px;
+	font-size:11px;
+}
+
+.sub .img_bottom_margin {
+	margin-bottom:10px;
+}
+	
+
+/*PULIP REBRANDING*/
+
+.sub .sub_img_pulip_title {
+	width:960px;
+	height:540px;
+	background:url(../images/000_pulip_rebranding_title.png) left top no-repeat;
+	background-size:960px 540px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_one {
+	width:960px;
+	height:640px;
+	background:url(../images/000_pulip_rebranding_1.png) left top no-repeat;
+	background-size:960px 640px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_two {
+	width:960px;
+	height:160px;
+	background:url(../images/000_pulip_rebranding_2.png) left top no-repeat;
+	background-size:960px 160px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_three {
+	width:960px;
+	height:540px;
+	background:url(../images/000_pulip_rebranding_3.png) left top no-repeat;
+	background-size:960px 540px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_four {
+	width:960px;
+	height:640px;
+	background:url(../images/000_pulip_rebranding_4.png) left top no-repeat;
+	background-size:960px 640px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_five {
+	width:960px;
+	height:640px;
+	background:url(../images/000_pulip_rebranding_5.png) left top no-repeat;
+	background-size:960px 640px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_six {
+	width:960px;
+	height:640px;
+	background:url(../images/000_pulip_rebranding_6.png) left top no-repeat;
+	background-size:960px 640px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_seven {
+	width:960px;
+	height:640px;
+	background:url(../images/000_pulip_rebranding_7.png) left top no-repeat;
+	background-size:960px 640px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_eight {
+	width:960px;
+	height:640px;
+	background:url(../images/000_pulip_rebranding_8.png) left top no-repeat;
+	background-size:960px 640px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_nine {
+	width:960px;
+	height:640px;
+	background:url(../images/000_pulip_rebranding_9.png) left top no-repeat;
+	background-size:960px 640px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+.sub .sub_img_pulip_ten {
+	width:960px;
+	height:640px;
+	background:url(../images/000_pulip_rebranding_10.png) left top no-repeat;
+	background-size:960px 640px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:4;
+}
+
+
+/*MVIO BRAND SITE*/
+
+.sub .sub_img_mvio_title {
+	width:960px;
+	height:540px;
+	background:url(../images/001_mvio_site_title.png) left top no-repeat;
+	background-size:960px 540px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+.sub .sub_img_mvio_one {
+	width:960px;
+	height:1372px;
+	background:url(../images/001_mvio_site_01.png) left top no-repeat;
+	background-size:960px 1372px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+.sub .sub_img_mvio_two {
+	width:960px;
+	height:312px;
+	background:url(../images/001_mvio_site_02.png) left top no-repeat;
+	background-size:960px 312px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+.sub .sub_img_mvio_three {
+	width:960px;
+	height:879px;
+	background:url(../images/001_mvio_site_03.png) left top no-repeat;
+	background-size:960px 879px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+.sub .sub_img_mvio_four {
+	width:960px;
+	height:890px;
+	background:url(../images/001_mvio_site_04.png) left top no-repeat;
+	background-size:960px 890px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	z-index:4;
+}
+
+
+@media (min-width:1px) and (max-width:654px){
+	h1 {
+	font-family:'Droid Serif', serif;
+	font-size:24px;
+	font-weight:700;
+	line-height:28px;
+	}
+	
+	.wrap {
+		margin-top:160px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+	}
+	
+	.gnb_wrap {
+		width:320px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:11;
+	}
+	
+	.gnb_title {
+		width:320px;
+		height:60px;
+		background:url(../images/common_title.png) left top no-repeat;
+		background-size:320px 60px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:13
+		}
+	
+	.gnb_menu_wrap {
+		width:320px;
+		height:60px;
+		vertical-align:middle;
+	}
+		
+	.gnb_title_wrap {
+		width:320px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:12;
+	}
+	
+	.container_wrap {
+		max-width:320px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:2;
+	}
+	
+	.sub .sub_title {
+		margin-left:0px;
+		margin-right:0px;
+		margin-bottom:18px;
+	}
+	
+	.sub .sub_title_info {
+		margin-left:0px;
+		margin-right:0px;
+		margin-bottom:30px;
+	}
+	
+	.sub .contents_margin {
+		margin-left:20px;
+		margin-right:20px;
+	}
+	
+	/*project sub img - 000 Pulip Rebranding*/
+	.sub .sub_img_pulip_title {
+		width:320px;
+		height:180px;
+		background:url(../images/000_pulip_rebranding_title.png) left top no-repeat;
+		background-size:320px 180px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_one {
+		width:320px;
+		height:213px;
+		background:url(../images/000_pulip_rebranding_1.png) left top no-repeat;
+		background-size:320px 213px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_two {
+		width:320px;
+		height:53px;
+		background:url(../images/000_pulip_rebranding_2.png) left top no-repeat;
+		background-size:320px 43px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_three {
+		width:320px;
+		height:180px;
+		background:url(../images/000_pulip_rebranding_3.png) left top no-repeat;
+		background-size:320px 180px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_four {
+		width:320px;
+		height:213px;
+		background:url(../images/000_pulip_rebranding_4.png) left top no-repeat;
+		background-size:320px 213px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_five {
+		width:320px;
+		height:213px;
+		background:url(../images/000_pulip_rebranding_5.png) left top no-repeat;
+		background-size:320px 213px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_six {
+		width:320px;
+		height:213px;
+		background:url(../images/000_pulip_rebranding_6.png) left top no-repeat;
+		background-size:320px 213px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_seven {
+		width:320px;
+		height:213px;
+		background:url(../images/000_pulip_rebranding_7.png) left top no-repeat;
+		background-size:320px 213px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_eight {
+		width:320px;
+		height:213px;
+		background:url(../images/000_pulip_rebranding_8.png) left top no-repeat;
+		background-size:320px 213px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_nine {
+		width:320px;
+		height:213px;
+		background:url(../images/000_pulip_rebranding_9.png) left top no-repeat;
+		background-size:320px 213px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_ten {
+		width:320px;
+		height:213px;
+		background:url(../images/000_pulip_rebranding_10.png) left top no-repeat;
+		background-size:320px 213px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	/*project sub img - 001mvio*/
+	.sub .sub_img_mvio_title {
+		width:320px;
+		height:180px;
+		background:url(../images/001_mvio_site_title.png) left top no-repeat;
+		background-size:320px 180px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_mvio_one {
+		width:320px;
+		height:457px;
+		background:url(../images/001_mvio_site_01.png) left top no-repeat;
+		background-size:320px 457px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_mvio_two {
+		width:320px;
+		height:104px;
+		background:url(../images/001_mvio_site_02.png) left top no-repeat;
+		background-size:320px 104px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_mvio_three {
+		width:320px;
+		height:293px;
+		background:url(../images/001_mvio_site_03.png) left top no-repeat;
+		background-size:320px 293px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_mvio_four {
+		width:320px;
+		height:297px;
+		background:url(../images/001_mvio_site_04.png) left top no-repeat;
+		background-size:320px 297px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+}
+
+@media (min-width:655px) and (max-width:974px){
+	.wrap {
+		margin-top:160px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+	}
+	
+	.gnb_wrap {
+		width:640px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:11;
+	}
+	
+	.gnb_title {
+		width:320px;
+		height:60px;
+		background:url(../images/common_title.png) left top no-repeat;
+		background-size:320px 60px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:13
+		}
+	
+	.gnb_menu_wrap {
+		width:640px;
+		height:60px;
+		vertical-align:middle;
+	}
+		
+	.gnb_title_wrap {
+		width:640px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:12;
+	}
+	
+	.container_wrap {
+		max-width:640px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:2;
+	}
+	
+	
+	.sub .sub_title {
+		margin-left:0px;
+		margin-right:0px;
+		margin-bottom:18px;
+	}
+	
+	.sub .sub_title_info {
+		margin-left:0px;
+		margin-right:0px;
+		margin-bottom:30px;
+	}
+	
+	.sub .contents_margin {
+		margin-left:20px;
+		margin-right:20px;
+	}
+	
+	/*project sub img*/
+	.sub .sub_img_pulip_title {
+		width:640px;
+		height:360px;
+		background:url(../images/000_pulip_rebranding_title.png) left top no-repeat;
+		background-size:640px 360px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_one {
+		width:640px;
+		height:427px;
+		background:url(../images/000_pulip_rebranding_1.png) left top no-repeat;
+		background-size:640px 427px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_two {
+		width:640px;
+		height:107px;
+		background:url(../images/000_pulip_rebranding_2.png) left top no-repeat;
+		background-size:640px 107px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_three {
+		width:640px;
+		height:360px;
+		background:url(../images/000_pulip_rebranding_3.png) left top no-repeat;
+		background-size:640px 360px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_four {
+		width:640px;
+		height:427px;
+		background:url(../images/000_pulip_rebranding_4.png) left top no-repeat;
+		background-size:640px 427px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_five {
+		width:640px;
+		height:427px;
+		background:url(../images/000_pulip_rebranding_5.png) left top no-repeat;
+		background-size:640px 427px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_six {
+		width:640px;
+		height:427px;
+		background:url(../images/000_pulip_rebranding_6.png) left top no-repeat;
+		background-size:640px 427px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_seven {
+		width:640px;
+		height:427px;
+		background:url(../images/000_pulip_rebranding_7.png) left top no-repeat;
+		background-size:640px 427px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_eight {
+		width:640px;
+		height:427px;
+		background:url(../images/000_pulip_rebranding_8.png) left top no-repeat;
+		background-size:640px 427px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_nine {
+		width:640px;
+		height:427px;
+		background:url(../images/000_pulip_rebranding_9.png) left top no-repeat;
+		background-size:640px 427px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_pulip_ten {
+		width:640px;
+		height:427px;
+		background:url(../images/000_pulip_rebranding_10.png) left top no-repeat;
+		background-size:640px 427px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	/*project sub img _ 001 mvio*/
+	.sub .sub_img_mvio_title {
+		width:640px;
+		height:360px;
+		background:url(../images/001_mvio_site_title.png) left top no-repeat;
+		background-size:640px 360px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:4;
+	}
+	
+	.sub .sub_img_mvio_one {
+		width:640px;
+		height:915px;
+		background:url(../images/001_mvio_site_01.png) left top no-repeat;
+		background-size:640px 915px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_mvio_two {
+		width:640px;
+		height:208px;
+		background:url(../images/001_mvio_site_02.png) left top no-repeat;
+		background-size:640px 208px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_mvio_three {
+		width:640px;
+		height:586px;
+		background:url(../images/001_mvio_site_03.png) left top no-repeat;
+		background-size:640px 586px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+	
+	.sub .sub_img_mvio_four {
+		width:640px;
+		height:593px;
+		background:url(../images/001_mvio_site_04.png) left top no-repeat;
+		background-size:640px 593px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;
+		z-index:4;
+	}
+}
+
+@media (min-width:975px) and (max-width:1294px){
+	.gnb_wrap {
+		width:960px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:11;
+	}
+	.container_wrap {
+	max-width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	z-index:2;}
+}
+
+@media (min-width:1300px){
+	.gnb_wrap {
+		width:1280px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		z-index:11;
+	}
+	
+	.container_wrap {
+	max-width:1280px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	z-index:2;}
+}

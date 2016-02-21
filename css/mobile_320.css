@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 639px) {
 
     /* 공통 */
     .header {
@@ -71,17 +71,20 @@
         display: none;
     }
 
+    .MainContents {
+        height: 600px;
+    }
+
     .MainContents .container {
-        width: 75%;
-        top: 40%;
+        width: 80%;
+        top: 15%;
         left: 50%;
-        padding-top: 40px;
         position: absolute;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
     }
 
     .container .MainTitle {
@@ -111,10 +114,8 @@
     }
 
     .ContentsThree {
-        background-position: 70%;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        background-size: cover;
+        background-position: -350px 150px;
+        background-color: #d47b7e;
     }
 
     .ContentsFive {
@@ -132,6 +133,26 @@
 
 
     /* works */
+    .projectQQ {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .projectHH {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .projectHQ {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .WContents {
+        margin-top: 600px;
+    }
+
+    /*
 
     .bg_1 {
         width: 100%;
@@ -193,6 +214,7 @@
         width: 100%;
         padding-bottom: 100%;
     }
+    */
 
 
     /* 커피앳웍스 */

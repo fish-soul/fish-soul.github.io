@@ -1,0 +1,568 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+body {
+    margin: 0 0 0 0;
+    font-family: Nexa, 'nanum-barun-gothic-regular', sans-serif;
+    height: 100%;
+    color: #333333;
+    background-color: #3c3f44;
+}
+
+::selection {
+    background-color : #ffff00 ;
+    color : #ffffff ;
+}
+
+
+
+/* 폰트 정의 */
+
+.Korean {
+    font-family: 'nanum-barun-gothic-regular', sans-serif;
+    font-weight: 400;
+}
+
+.NexaBlack {
+    font-family: NexaBlack;
+    font-weight: normal;
+    font-style: normal;
+}
+.Nexa {
+    font-family: Nexa;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.LightGray {
+    color: #CCCCCC;
+}
+
+
+
+/* 공통 css 시작 */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+.RightPadding20 {
+    padding-right: 20px;
+}
+
+.TopPadding20 {
+    padding-top: 20px;
+}
+
+.padding4px {
+    padding-right: 4px;
+}
+
+.BoxSizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-top: 58px;
+    padding-bottom: 22px;
+    z-index: 4;
+}
+
+.header .container {
+    width: 87.5%;
+    margin: 0 auto;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.logo {
+    left: 0;
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    margin-right: 4px;
+}
+
+.HeaderLine {
+    width:0%;
+    height: 4px;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+    float: left;
+    -webkit-animation: HLine 2s;
+    -o-animation: HLine 2s;
+    animation: HLine 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes HLine {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    ;}
+}
+
+.hamburg {
+    right: 0;
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-animation: ham 0.6s;
+    -o-animation: ham 0.6s;
+    animation: ham 0.6s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.9s;
+    -moz-animation-delay: 1.9s;
+    -o-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+}
+
+@keyframes ham {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    ;}
+
+}
+
+
+
+/* 공통 css 끝 */
+
+
+/* 히든메뉴 시작 */
+.HiddenNavi {
+    width: 280px;
+    height: 100%;
+    background-color: #2b2b2b;
+    position: fixed;
+    top: 0px;
+    right: -280px;
+    z-index: 5;
+    transition: 0.2s;
+    visibility: hidden;
+}
+
+.HiddenNavi.active {
+    right: 0px;
+    visibility: visible;
+}
+
+
+.close {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.close .line {
+    width: 190px;
+    top: 68px;
+    height: 4px;
+    background-color:#ffffff;
+    float: left;
+    position: absolute;
+
+}
+
+.close .btn {
+    width: 18px;
+    height: 18px;
+    top: 57px;
+    right: 60px;
+    float: right;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.HiddenNavi .container {
+    width: 200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.HiddenNavi .Menu {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 50px;
+
+}
+
+.Menu a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.Menu a:hover {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+
+.profile {
+    margin-top: 95%;
+    width: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.profile .Photo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -4px;
+}
+
+.profile .Contact {
+    width: 138px;
+    left-margin: 12px;
+    float: right;
+    color: #FFFFFF;
+    line-height: 22px;
+}
+
+
+.Contact a {
+    color: #FFFFFF;
+}
+
+.Name {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.Email {
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.MyInfo {
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #999999;
+}
+
+.footer {
+    width: 200px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footer .sns {
+    width: inherit;
+    text-align: left;
+}
+
+.footer .copyright {
+    float: right;
+    text-align: right;
+    font-size: 11px;
+    color: #666666;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+/* 히든메뉴 끝 */
+
+
+
+
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,169 +1,5 @@
 
 
-.WContents {
-    width: 100%;
-}
-
-.WContents a {
-    color: #FFFFFF;
-}
-
-
-.bg_1 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #000000;
-    background-image: url(../img/works_thumbnail_coffeeatworks.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-
-.bg_2 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #000000;
-    background-image: url(../img/works_thumbnail_roomcube.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-.bg_3 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #000000;
-    background-image: url(../img/works_thumbnail_rebranding.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.bg_4 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_lbh.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.bg_5 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_samsungsdi.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.bg_6 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_pulipin.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.bg_7 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_restroom.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-.bg_8 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_xmascard.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-.bg_9 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_cjone.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.bg_10 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_hyundaiinvestment.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.bg_11 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_dmbio.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.bg_12 {
-    width: 25%;
-    padding-bottom: 25%;
-    float: left;
-    background-color: #ffff00;
-    background-image: url(../img/works_thumbnail_roomproposal.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-
-
 /* 상세 공통 */
 
 .WorksTitle {
@@ -179,7 +15,7 @@
 
 .DiscriptionBg .discription {
     width: 75%;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .DiscriptionBg .discription .info {
@@ -215,11 +51,9 @@
 
 .CAW .visual {
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-color: #3c3f44;
-    background-image: url(../works/img/works_coffeeatworks_bg1.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background: url(../img/works_coffeeatworks_bg1.png) bottom no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -230,70 +64,6 @@
     background-color: #1a1d20;
     padding: 60px 0;
 }
-
-
-.CAW .chapter1 {
-    width: 100%;
-    height: 800px;
-    background-color: #ffff00;
-    background-image: url(../works/img/works_coffeeatworks_bg2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-.CAW .chapter1 .bg {
-    width: 100%;
-    height: 100%;
-    background-image: url(../works/img/works_coffeeatworks_chapter1.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-
-}
-
-.CAW .chapter2 {
-    width: 100%;
-    height: 800px;
-    background-color: #ffffff;
-}
-
-.CAW .chapter2 .bg {
-    width: 100%;
-    height: 100%;
-    background-image: url(../works/img/works_coffeeatworks_chapter2.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-
-}
-
-.CAW .chapter3 {
-    width: 100%;
-    height: 800px;
-    background-color: #e4d9c5;
-    background-image: url(../works/img/works_coffeeatworks_bg4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-.CAW .chapter3 .bg {
-    width: 100%;
-    height: 100%;
-    background-image: url(../works/img/works_coffeeatworks_chapter3.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-
-}
-
-
 
 
 .CAW .subtitle {
@@ -325,7 +95,7 @@
     width: 100%;
     height: 1090px;
     background-color: #5ac6ff;
-    background-image: url(../works/img/works_roomcube_bg1.png);
+    background-image: url(../img/works_roomcube_bg1.png);
     background-position: bottom;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -351,7 +121,7 @@
     width: 100%;
     height: 1600px;
     background-color: #a4adb7;
-    background-image: url(../works/img/works_restroom_bg1.png);
+    background-image: url(../img/works_restroom_bg1.png);
     background-position: bottom;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -376,7 +146,7 @@
     width: 100%;
     height: 1150px;
     background-color: #e1c6c4;
-    background-image: url(../works/img/works_xmascard_bg1.png);
+    background-image: url(../img/works_xmascard_bg1.png);
     background-position: bottom;
     background-repeat: no-repeat;
     -webkit-background-size: cover;

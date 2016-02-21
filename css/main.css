@@ -1,15 +1,13 @@
-body {
-    overflow: hidden;
-}
+
 
 
 /* 메인 본문 시작 */
 
 
 .MainContents {
-    width: 500%;
-    height: 100%;
-    position: relative;
+    width: 100%;
+    height: 700px;
+    position: absolute;
     top: 0;
     z-index: 1;
 }
@@ -17,7 +15,7 @@ body {
 /* 배경 이미지 시작 */
 
 .ContentsOne {
-    width: 20%;
+    width: 100%;
     height: 100%;
     position: relative;
     background-color: #3c3f44;
@@ -45,17 +43,16 @@ body {
 }
 
 .ContentsThree {
-    width: 20%;
+    width: 100%;
     height: 100%;
     position: relative;
-    background-color: transparent;
-    background-image: url(../img/mainbg_rebranding.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #d47b7e;
+    background: url(../img/mainbg_rebranding.png) center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     z-index: 2;
     float: left;
+
 }
 
 .ContentsFour {
@@ -94,10 +91,9 @@ body {
 /* 중앙 텍스트 시작 */
 
 .MainContents .container {
-    width: 75%;
+    width: 85%;
     top: 50%;
     left: 50%;
-    padding-top: 40px;
     color: #FFFFFF;
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
@@ -110,8 +106,8 @@ body {
 
 
 .container .MainTitle {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 48px;
 }
 
 .container .MainSubTitle {
@@ -121,21 +117,22 @@ body {
 }
 
 
+/* 중앙 텍스트 끝 */
+
+/* 버튼 애니메이션 시작 _ 1 */
+
 .container .MainBtnMore {
     margin-top: 50px;
 }
 
-/* 중앙 텍스트 끝 */
-
-/* 버튼 애니메이션 시작 */
 
 .MainBtnMore a {
-    border: 4px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     border-radius: 40px;
     position: relative;;
-    padding: 10px 60px;
+    padding: 10px 30px;
     transition: 0.2s;
     text-decoration: none;
     color: #FFFFFF;
@@ -146,7 +143,34 @@ body {
     color: #333333;
 }
 
-/* 버튼 애니메이션 끝 */
+/* 버튼 애니메이션 끝 _ 1 */
+
+
+/* 버튼 애니메이션 시작 _ 2pink */
+
+.container .MainBtnMorePink {
+    margin-top: 50px;
+}
+
+
+.MainBtnMorePink a {
+    border: 2px solid #FFFFFF;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    position: relative;;
+    padding: 10px 30px;
+    transition: 0.2s;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.MainBtnMorePink a:hover {
+    background-color: #FFFFFF;
+    color: #d47b7e;
+}
+
+/* 버튼 애니메이션 끝 _ 2pink */
 
 
 
@@ -231,7 +255,7 @@ body {
 .ArrowContainer {
     width: 52px;
     height: 16px;
-    position: fixed;
+    position: relative;
     top: 75%;
     right: 12.5%;
     z-index: 3;
@@ -270,6 +294,107 @@ body {
 }
 
 /* 좌우 화살표 끝 */
+
+/* 프로젝트 리스트 시작 */
+
+
+
+.WContents {
+    width: 100%;
+    margin-top: 700px;
+    z-index: 5;
+}
+
+.WContents a {
+    color: #FFFFFF;
+}
+
+.projectQQ {
+    width: 25%;
+    padding-bottom: 25%;
+}
+
+.projectHH {
+    width: 50%;
+    padding-bottom: 50%;
+}
+
+.projectHQ {
+    width: 50%;
+    padding-bottom: 25%;
+}
+
+.Thumb_Coffeeworks {
+    background: url(../img/works_thumbnail_coffeeatworks.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+}
+
+.Thumb_Restroom {
+    background: url(../img/works_thumbnail_restroom.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: right;
+}
+
+.Thumb_CjOne {
+    background: url(../img/works_thumbnail_cjone.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: right;
+}
+
+.Thumb_HDRoom {
+    background: url(../img/works_thumbnail_roomcube.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: right;
+}
+
+.Thumb_HDInvest {
+    background: url(../img/works_thumbnail_hyundaiinvestment.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+}
+
+.Thumb_XMascard {
+    background: url(../img/works_thumbnail_xmascard.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+}
+
+.Thumb_rebranding {
+    background: url(../img/works_thumbnail_rebranding.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: right;
+}
+
+.Thumb_LBH {
+    background: url(../img/works_thumbnail_lbh.png) top no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+}
+
+.Thumb_Pulipin {
+    background: url(../img/works_thumbnail_pulipin.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+}
+
+.Thumb_SSEnergySystem {
+    background: url(../img/works_thumbnail_samsungsdi.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+}
+
+/* 프로젝트 리스트 끝 */
 
 /* 메인 본문 css 끝 */
 
