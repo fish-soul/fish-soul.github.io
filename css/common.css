@@ -107,7 +107,7 @@ body {
     height: 100%;
     color: #333333;
     background-color: #000000;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 ::selection {
@@ -124,6 +124,10 @@ body {
     font-weight: 400;
 }
 
+.KoreanBold {
+    font-family: 'nanum-barun-gothic-regular', sans-serif;
+    font-weight: bold;
+}
 .NexaBlack {
     font-family: NexaBlack;
     font-weight: normal;
@@ -175,7 +179,13 @@ a:hover {
     box-sizing: border-box;
 }
 
+.MarginTop_50px {
+    margin-top: 50px;
+}
 
+.MarginBottom_100px {
+    margin-bottom: 100px;
+}
 
 .header {
     width: 100%;

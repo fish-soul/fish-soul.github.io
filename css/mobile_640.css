@@ -237,7 +237,17 @@
 
     /* room cube */
 
-    .RoomCube .visual {
+    .RoomCube .visual_one {
+        height: 600px;
+        background-size: cover;
+    }
+
+    .RoomCube .visual_two {
+        height: 600px;
+        background-size: cover;
+    }
+
+    .RoomCube .visual_three {
         height: 600px;
         background-size: cover;
     }

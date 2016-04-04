@@ -7,7 +7,7 @@
 .MainContents {
     width: 100%;
     height: 700px;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
@@ -302,7 +302,8 @@
 .WContents {
     width: 100%;
     margin-top: 700px;
-    z-index: 5;
+    z-index: 3;
+    position: relative;
 }
 
 .WContents a {
@@ -322,6 +323,13 @@
 .projectHQ {
     width: 50%;
     padding-bottom: 25%;
+}
+
+.Thumb_ffff00 {
+    background: url(../img/works_thumbnail_ffff00.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
 }
 
 .Thumb_Coffeeworks {
@@ -384,7 +392,8 @@
     background: url(../img/works_thumbnail_pulipin.png) center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    float: left;
+    float: right;
+    background-color: #575c73;
 }
 
 .Thumb_SSEnergySystem {
