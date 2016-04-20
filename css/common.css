@@ -99,11 +99,11 @@ textarea {
    ========================================================================== */
 
 
-
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
 
 body {
     margin: 0 0 0 0;
-    font-family: Nexa, 'nanum-barun-gothic-regular', sans-serif;
+    font-family: 'nanum-barun-gothic-regular', sans-serif;
     height: 100%;
     color: #333333;
     background-color: #000000;
@@ -129,13 +129,13 @@ body {
     font-weight: bold;
 }
 .NexaBlack {
-    font-family: NexaBlack;
-    font-weight: normal;
+    font-family: 'Libre Bakerville', serif;
+    font-weight: 700;
     font-style: normal;
 }
 .Nexa {
-    font-family: Nexa;
-    font-weight: normal;
+    font-family: 'Libre Bakerville', serif;
+    font-weight: 400;
     font-style: normal;
 }
 
